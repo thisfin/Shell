@@ -354,6 +354,18 @@
                                         "type": "click",
                                         "actions": [
                                             {
+                                                "type": "TMSearchUserTrack",
+                                                "param": {
+                                                    "click": {
+                                                        "controlName": "Button-TMSearch-Coupon",
+                                                        "args": {
+                                                            "keyword": "$keyWord",
+                                                            "sellerId": "$sellerId"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
                                                 "type": "sendRequest",
                                                 "param": {
                                                     "apiAlias": "drawRequest",
@@ -446,17 +458,6 @@
                                     "url": "http://gtms01.alicdn.com/tps/i1/TB1rU8.LVXXXXc8XXXXE5jB3XXX-114-114.png"
                                 },
                                 "events": [
-                                    {
-                                        "type": "onload",
-                                        "actions": [
-                                            {
-                                                "type": "toast",
-                                                "param": {
-                                                    "text": "领取成功"
-                                                }
-                                            }
-                                        ]
-                                    }
                                 ]
                             }
                         ]

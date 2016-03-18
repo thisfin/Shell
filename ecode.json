@@ -35,7 +35,8 @@
                                     "$shopName": "${initRequest}.data.shopName",
                                     "$awardName": "${initRequest}.data.awardBeans.name",
                                     "$awardValue": "${initRequest}.data.awardBeans.extra.value",
-                                    "$awardValidTime": "${initRequest}.data.awardBeans.extra.validTime"
+                                    "$awardValidTime": "${initRequest}.data.awardBeans.extra.validTime",
+                                    "$ruleUrl": "${initRequest}.data.activityRuleUrl"
                                 }
                             },
                             {
@@ -155,10 +156,10 @@
                                 "type": "click",
                                 "actions": [
                                     {
-                                        "type": "openURL",
+                                        "type": "TMSearchOpenURL",
                                         "param": {
-                                            "url": "http://m.taobao.com",
-                                            "title": "APP动态点击事件1"
+                                            "url": "$ruleUrl",
+                                            "-title": "APP动态点击事件1"
                                         }
                                     }
                                 ]
@@ -380,6 +381,18 @@
                                         "type": "click",
                                         "actions": [
                                             {
+                                                "type": "TMSearchUserTrack",
+                                                "param": {
+                                                    "click": {
+                                                        "controlName": "Button-TMSearch-Gift",
+                                                        "args": {
+                                                            "keyword": "$keyWord",
+                                                            "sellerId": "$sellerId"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
                                                 "type": "sendRequest",
                                                 "param": {
                                                     "apiAlias": "drawRequest",
@@ -472,17 +485,6 @@
                                     "url": "http://gtms02.alicdn.com/tps/i2/TB1H9tHLVXXXXaCapXXE5jB3XXX-114-114.png"
                                 },
                                 "events": [
-                                    {
-                                        "type": "onload",
-                                        "actions": [
-                                            {
-                                                "type": "toast",
-                                                "param": {
-                                                    "text": "领取成功"
-                                                }
-                                            }
-                                        ]
-                                    }
                                 ]
                             }
                         ]
