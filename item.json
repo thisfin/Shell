@@ -32,8 +32,8 @@
                                 "type": "changeData",
                                 "param": {
                                     "$status": "${initRequest}.data.status",
-                                    "$itemNumber": "999/1000",
-                                    "$validTime": "22:22",
+                                    "$itemNumber": "${initRequest}.data.awardBeans.extra.remainingQuantity",
+                                    "$validTime": "${initRequest}.data.awardBeans.extra.expireTime",
                                     "$ruleUrl": "${initRequest}.data.activityRuleUrl",
                                     "$itemTitle": "${initRequest}.data.awardBeans.name",
                                     "$itemPic": "${initRequest}.data.awardBeans.extra.picUrl",
