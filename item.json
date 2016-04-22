@@ -33,6 +33,7 @@
                                 "param": {
                                     "$status": "${initRequest}.data.status",
                                     "$itemNumber": "${initRequest}.data.awardBeans.extra.remainingQuantity",
+                                    "$validTime2": "${initRequest}.data.awardBeans.extra.remainingMinutes",
                                     "$validTime": "${initRequest}.data.awardBeans.extra.expireTime",
                                     "$ruleUrl": "${initRequest}.data.activityRuleUrl",
                                     "$itemTitle": "${initRequest}.data.awardBeans.name",
@@ -342,7 +343,7 @@
                                             "invisible": "false"
                                         },
                                         "dataBinding": {
-                                            "value": "$validTime",
+                                            "value": "$validTime2",
                                             "suffix": "前价格有效, 限购一次!"
                                         }
                                     },
