@@ -1,7 +1,6 @@
 {
     "comment": "weapp写起来太麻烦了",
-    "data": {
-    },
+    "data": {},
     "view": {
         "type": "container",
         "styleBinding": {
@@ -432,8 +431,7 @@
                                 "dataBinding": {
                                     "url": "http://gtms03.alicdn.com/tps/i3/TB13qeXLVXXXXc_XXXXE5jB3XXX-114-114.png"
                                 },
-                                "events": [
-                                ]
+                                "events": []
                             },
                             {
                                 "comment": "已领完",
@@ -441,10 +439,9 @@
                                 "left": "$status",
                                 "right": "used_up",
                                 "dataBinding": {
-                                    "url": "http://gtms02.alicdn.com/tps/i2/TB1H9tHLVXXXXaCapXXE5jB3XXX-114-114.png"
+                                    "url": "http://img.alicdn.com/tfs/TB1q8.1JFXXXXaKXXXXXXXXXXXX-114-114.png"
                                 },
-                                "events": [
-                                ]
+                                "events": []
                             },
                             {
                                 "comment": "中过",
@@ -454,8 +451,7 @@
                                 "dataBinding": {
                                     "url": "http://gtms02.alicdn.com/tps/i2/TB1H9tHLVXXXXaCapXXE5jB3XXX-114-114.png"
                                 },
-                                "events": [
-                                ]
+                                "events": []
                             },
                             {
                                 "comment": "未抢到",
@@ -473,8 +469,7 @@
                                 "dataBinding": {
                                     "url": "http://gtms01.alicdn.com/tps/i1/TB1YVV.LVXXXXc8XXXXE5jB3XXX-114-114.png"
                                 },
-                                "events": [
-                                ]
+                                "events": []
                             },
                             {
                                 "comment": "领取成功",
@@ -484,8 +479,7 @@
                                 "dataBinding": {
                                     "url": "http://gtms02.alicdn.com/tps/i2/TB1H9tHLVXXXXaCapXXE5jB3XXX-114-114.png"
                                 },
-                                "events": [
-                                ]
+                                "events": []
                             }
                         ]
                     },
