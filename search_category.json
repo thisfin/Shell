@@ -146,7 +146,13 @@
     {
         "searchTypeKey": "gloDirect",
         "categoryRootName": "gloDirect",
-        "hotSuggestSrc": "tmall_app",
+        "hotSuggestSrc": "tmhwzy.list.app",
         "description": "海外直营"
+    },
+    {
+        "searchTypeKey": "dacu",
+        "categoryRootName": "",
+        "hotSuggestSrc": "dacu..pc",
+        "description": "粉丝趴大促"
     }
 ]
