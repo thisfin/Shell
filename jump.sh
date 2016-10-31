@@ -1,1 +1,1 @@
-ssh wenyou.ly@login1.cm3.alibaba.org
+ssh wenyou.ly@login1.cm10.alibaba.org
